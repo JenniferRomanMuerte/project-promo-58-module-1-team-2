@@ -14,8 +14,41 @@
   --color-tertiary: #000;
   --color-text: #3f3f3f;
 }
+
 /*******HEADER********/
 /* Susana */
+.header {
+  width: 693px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+  padding: 24px 148px 24px 70px;
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.menu-icon {
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
 
 /*******HERO********/
 /* Jennifer */
@@ -27,6 +60,7 @@
   justify-content: center;
   margin-block: 6.3rem;
 }
+
 
 .hero-title {
   font-size: 62px;
@@ -52,7 +86,7 @@
 }
 
 .hero-subtitle {
-  font-size: 40px;
+  font-size: 4rem;
   display: none;
   margin-top: 1.32rem;
 }
@@ -111,8 +145,26 @@
   text-decoration-thickness: 0.05rem; /* grosor de la línea */
 }
 
+/*******PROJECT********/
+/* Mechi */
+
+/*******NEWS********/
+/* Mari */
+
+/*******LIST********/
+/* Susana */
+
+/*******FOOTER********/
+/* Mechi */
+
+
+/*********MEDIA-QUERIES********/
 @media (width >768px) {
-  .container-title {
+/* Susana */
+
+
+/* Jennifer */
+  .hero-container-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,10 +173,10 @@
     display: inline-block;
   }
   .underline {
+    display: inline-block;
     margin-left: 20rem;
-    width: 15%;
+    width: 15vw;
     margin-bottom: 10rem;
-
   }
 
   .hero-subtitle {
@@ -147,15 +199,11 @@
   .hero-read-more {
     padding-block: 1.5rem;
   }
+
+
+  /* Mechi */
+
+
+
+  /* Mari */
 }
-/*******PROJECT********/
-/* Mechi */
-
-/*******NEWS********/
-/* Mari */
-
-/*******LIST********/
-/* Susana */
-
-/*******FOOTER********/
-/* Mechi */

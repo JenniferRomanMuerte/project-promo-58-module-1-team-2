@@ -136,6 +136,42 @@ font-size: 62.5%;
 
 /*******NEWS********/
 /* Mari */
+.news {
+  margin-top: 9.3rem;
+  margin-left: 0.1rem;
+  padding-inline: 3.8rem;
+  width: 100vw;
+}
+.news-title {
+  font-size: 4rem;
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; 
+  margin-bottom: 3rem;
+}
+.news-img {
+  width: 100%;
+ 
+}
+.news-paragraph {
+  font-size: 2.4rem;
+  text-align: center;
+  gap: 3rem;
+}
+.news-button {
+  background-color: #fff;
+  color: var(--color-primary);
+  border: 0.1rem var(--color-primary) solid;
+  display: inline-block;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  width: 20rem;
+  font-size: 1.8rem;
+  margin-bottom: 0;g 
+}
 
 /*******LIST********/
 /* Susana */

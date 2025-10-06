@@ -161,7 +161,9 @@
 /*********MEDIA-QUERIES********/
 @media (width >768px) {
 /* Susana */
-
+.menu-icon {
+  display: none;
+}
 
 /* Jennifer */
   .hero-container-title {

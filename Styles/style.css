@@ -7,7 +7,6 @@
 
 /* VARIABLES*/
 :root {
-
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -17,14 +16,14 @@
   /*Colors*/
   --color-primary: #8447e9;
   --color-secondary: #fff;
-  --color-secondary-variant:#f5f5f5;
+  --color-secondary-variant: #f5f5f5;
   --color-tertiary: #000;
   --color-tertiary-variant: #0f0f0f;
   --color-text: #3f3f3f;
-   /* Font weight*/
-   --montserrat-medium: 500;
-   --montserrat-semibold: 600;
-   --roboto-bold: 700;
+  /* Font weight*/
+  --montserrat-medium: 500;
+  --montserrat-semibold: 600;
+  --roboto-bold: 700;
 }
 
 /*******HEADER********/
@@ -70,14 +69,13 @@
   margin-block: 6.3rem;
 }
 
-.hero-container-title{
- display: none;
+.hero-container-title {
+  display: none;
 }
-
 
 .hero-title {
   font-size: 6.2rem;
-  color: var(--color-tertiary-variant );
+  color: var(--color-tertiary-variant);
   margin-top: 1.96rem;
   margin-bottom: 1.33rem;
 }
@@ -155,101 +153,52 @@
 
 /*******PROJECT********/
 /* Mechi */
-.projects{
+.projects {
   background-color: #8447e9;
   background-attachment: fixed;
   overflow: hidden;
   width: 100%;
 }
-.projects-container{
+.projects-container {
   background-color: #8447e9;
   color: white;
   width: 100%;
   margin-top: 20;
   margin-left: 30px;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
-.projects-title{
+.projects-title {
   background-color: #8447e9;
   color: white;
   font-size: 10px;
   display: flex;
   margin-block: 30px;
 }
-.projects-parrafo{
+.projects-parrafo {
   color: white;
   display: none;
 }
-.projects-images{
+.projects-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.projects-images-blvck{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
+.projects.section {
+  display: flex;
+  flex-direction: column;
 }
-.projects-images-cream{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
-}
-.projects-images-fredi{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
-}
-.projects-images-apollo{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
-}
-.projects-text-line{
+.projects-text-line {
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
 }
-@media screen and (min-width:768px) {
-  .projects-parrafo{
-    display: inline-block;
-  }
-  
-}
-/*******NEWS********/
-/* Mari */
-news {
-  margin-top: 9.3rem;
-  margin-left: 0.1rem;
-  padding-inline: 3.8rem;
-  width: 100vw;
-}
-.news-title {
-  font-size: 4rem;
-}
-.news-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-.news-img {
-  width: 100%;
-
-}
-.news-paragraph {
-  font-size: 2.4rem;
-  text-align: center;
-  gap: 3rem;
-}
-.news-button {
-  background-color: #fff;
-  color: var(--color-primary);
-  border: 0.1rem var(--color-primary) solid;
+.projects-button {
+  background-color: #8447e9;
+  color: var(--color-secondary);
+  border: 0.1rem var(--color-secondary) solid;
   display: inline-block;
   padding-inline: 2rem;
   padding-block: 2rem;
@@ -257,21 +206,58 @@ news {
   font-size: 1.8rem;
   margin-bottom: 0g;
 }
-/*******LIST********/
-/* Susana */
+@media screen and (min-width: 768px) {
+  /*******NEWS********/
+  /* Mari */
+  news {
+    margin-top: 9.3rem;
+    margin-left: 0.1rem;
+    padding-inline: 3.8rem;
+    width: 100vw;
+  }
+  .news-title {
+    font-size: 4rem;
+  }
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .news-img {
+    width: 100%;
+  }
+  .news-paragraph {
+    font-size: 2.4rem;
+    text-align: center;
+    gap: 3rem;
+  }
+  .news-button {
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 0.1rem var(--color-primary) solid;
+    display: inline-block;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    margin-bottom: 0g;
+  }
+  /*******LIST********/
+  /* Susana */
 
-/*******FOOTER********/
-/* Mechi */
+  /*******FOOTER********/
+  /* Mechi */
 
+  /*********MEDIA-QUERIES********/
 
-/*********MEDIA-QUERIES********/
-@media (width >768px) {
-/* Susana */
-.menu-icon {
-  display: none;
-}
+  /* Susana */
+  .menu-icon {
+    display: none;
+  }
 
-/* Jennifer */
+  /* Jennifer */
   .hero-container-title {
     display: flex;
     flex-direction: column;
@@ -308,10 +294,10 @@ news {
     padding-block: 1.5rem;
   }
 
-
   /* Mechi */
-
-
-
-  /* Mari */
+  .projects-parrafo {
+    display: inline-block;
+  }
 }
+
+/* Mari */

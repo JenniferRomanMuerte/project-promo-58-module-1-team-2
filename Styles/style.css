@@ -75,6 +75,7 @@
 
 .hero-title {
   font-size: 6.2rem;
+  font-weight: var(--montserrat-semibold);
   color: var(--color-tertiary-variant);
   margin-top: 1.96rem;
   margin-bottom: 1.33rem;
@@ -87,12 +88,14 @@
 .hero-button {
   background-color: var(--color-primary);
   color: var(--color-secondary-variant);
-  padding: 20px;
+  padding: 2rem;
   border: none;
+  font-weight: var(--montserrat-medium);
 }
 
 .hero-subtitle {
   font-size: 4rem;
+  font-weight: var(--montserrat-medium);
   display: none;
   margin-top: 1.32rem;
 }
@@ -120,19 +123,27 @@
   height: 14.4rem;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
-.hero-img {
-  height: 100%; /* se adapta al alto del contenedor */
-  width: auto; /* ocupa el anchoi necesario */
-  object-fit: cover; /* rellena el espacio sin deformarse */
-  object-position: center; /* centra la parte visible */
-  display: block;
+.programming {
+  background-image: url("../img/hero-programing.png");
+  background-repeat: no-repeat;
+}
+
+.marketing {
+  background-image: url("../img/hero_marketing.png");
+  background-repeat: no-repeat;
+}
+
+.design {
+  background-image: url("../img/hero_design.png");
+  background-repeat: no-repeat;
 }
 
 .hero-title-img {
   font-size: 3.2rem;
+  font-weight: var(--montserrat-medium);
   color: var(--color-primary);
   margin-block: 1rem;
 }
@@ -145,7 +156,7 @@
 
 .hero-read-more {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: var(--montserrat-medium);
   text-decoration: underline wavy var(--color-primary); /* Línea ondulada*/
   text-underline-offset: 1rem; /* separación entre texto y subrayado */
   text-decoration-thickness: 0.05rem; /* grosor de la línea */
@@ -195,10 +206,41 @@
   align-items: center;
   padding: 20px 20px;
 }
-.projects-button {
-  background-color: #8447e9;
-  color: var(--color-secondary);
-  border: 0.1rem var(--color-secondary) solid;
+@media screen and (min-width: 768px) {
+  .projects-parrafo {
+    display: inline-block;
+  }
+}
+/*******NEWS********/
+/* Mari */
+.news {
+  margin-top: 9.3rem;
+  margin-left: 0.1rem;
+  padding-inline: 3.8rem;
+  width: 100vw;
+}
+.news-title {
+  font-size: 4rem;
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.news-img {
+  width: 100%;
+}
+.news-paragraph {
+  font-size: 2.4rem;
+  text-align: center;
+  gap: 3rem;
+}
+.news-button {
+  background-color: #fff;
+  color: var(--color-primary);
+  border: 0.1rem var(--color-primary) solid;
   display: inline-block;
   padding-inline: 2rem;
   padding-block: 2rem;
@@ -262,15 +304,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 9rem;
   }
   .hero-title {
     display: inline-block;
   }
   .underline {
-    display: inline-block;
-    margin-left: 20rem;
-    width: 15vw;
-    margin-bottom: 10rem;
+    background-image: url("../img/wavy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19rem;
+    height: 2.7rem;
+    position: absolute;
+    margin-top: 10.6rem;
+    margin-left: 25rem;
   }
 
   .hero-subtitle {
@@ -295,9 +342,8 @@
   }
 
   /* Mechi */
-  .projects-parrafo {
-    display: inline-block;
-  }
+
+  /* Mari */
 }
 
 /* Mari */

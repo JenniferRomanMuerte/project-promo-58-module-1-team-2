@@ -174,17 +174,15 @@
   color: white;
   font-size: 10px;
   display: flex;
-  max-width: 112px;
-  max-height: 20px;
-  margin-top: 20px;
+  margin-block: 30px;
 }
 .projects-parrafo{
   color: white;
- 
   display: none;
 }
 .projects-images{
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

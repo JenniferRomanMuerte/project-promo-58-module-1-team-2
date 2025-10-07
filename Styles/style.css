@@ -7,7 +7,6 @@
 
 /* VARIABLES*/
 :root {
-
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -17,14 +16,14 @@
   /*Colors*/
   --color-primary: #8447e9;
   --color-secondary: #fff;
-  --color-secondary-variant:#f5f5f5;
+  --color-secondary-variant: #f5f5f5;
   --color-tertiary: #000;
   --color-tertiary-variant: #0f0f0f;
   --color-text: #3f3f3f;
-   /* Font weight*/
-   --montserrat-medium: 500;
-   --montserrat-semibold: 600;
-   --roboto-bold: 700;
+  /* Font weight*/
+  --montserrat-medium: 500;
+  --montserrat-semibold: 600;
+  --roboto-bold: 700;
 }
 
 /*******HEADER********/
@@ -70,15 +69,14 @@
   margin-block: 6.3rem;
 }
 
-.hero-container-title{
- display: none;
+.hero-container-title {
+  display: none;
 }
-
 
 .hero-title {
   font-size: 6.2rem;
   font-weight: var(--montserrat-semibold);
-  color: var(--color-tertiary-variant );
+  color: var(--color-tertiary-variant);
   margin-top: 1.96rem;
   margin-bottom: 1.33rem;
 }
@@ -121,7 +119,6 @@
   margin-bottom: 2.3rem;
 }
 
-
 .hero-container-image {
   height: 14.4rem;
   width: 100%;
@@ -129,17 +126,17 @@
   margin-bottom: 1rem;
 }
 
-.programming{
+.programming {
   background-image: url("../img/hero-programing.png");
   background-repeat: no-repeat;
 }
 
-.marketing{
+.marketing {
   background-image: url("../img/hero_marketing.png");
   background-repeat: no-repeat;
 }
 
-.design{
+.design {
   background-image: url("../img/hero_design.png");
   background-repeat: no-repeat;
 }
@@ -167,13 +164,13 @@
 
 /*******PROJECT********/
 /* Mechi */
-.projects{
+.projects {
   background-color: #8447e9;
   background-attachment: fixed;
   overflow: hidden;
   width: 100%;
 }
-.projects-container{
+.projects-container {
   background-color: #8447e9;
   color: white;
   width: 100%;
@@ -181,42 +178,40 @@
   margin-left: 30px;
   margin-bottom: 15px;
 }
-.projects-title{
+.projects-title {
   background-color: #8447e9;
   color: white;
   font-size: 10px;
   display: flex;
   margin-block: 30px;
 }
-.projects-parrafo{
+.projects-parrafo {
   color: white;
   display: none;
 }
-.projects-images{
+.projects-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.projects-section{
+.projects-section {
   display: flex;
   flex-direction: column;
-
 }
 
-.projects-text-line{
+.projects-text-line {
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
 }
-@media screen and (min-width:768px) {
-  .projects-parrafo{
+@media screen and (min-width: 768px) {
+  .projects-parrafo {
     display: inline-block;
   }
-
 }
 /*******NEWS********/
 /* Mari */
@@ -238,7 +233,6 @@
 }
 .news-img {
   width: 100%;
-
 }
 .news-paragraph {
   font-size: 2.4rem;
@@ -262,15 +256,14 @@
 /*******FOOTER********/
 /* Mechi */
 
-
 /*********MEDIA-QUERIES********/
 @media (width >768px) {
-/* Susana */
-.menu-icon {
-  display: none;
-}
+  /* Susana */
+  .menu-icon {
+    display: none;
+  }
 
-/* Jennifer */
+  /* Jennifer */
   .hero-container-title {
     display: flex;
     flex-direction: column;
@@ -290,7 +283,7 @@
     margin-top: 10.6rem;
     margin-left: 25rem;
   }
-  
+
   .hero-subtitle {
     display: inline-block;
     margin-block: 13.2rem;
@@ -312,10 +305,7 @@
     padding-block: 1.5rem;
   }
 
-
   /* Mechi */
-
-
 
   /* Mari */
 }

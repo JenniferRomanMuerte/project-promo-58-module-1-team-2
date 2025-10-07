@@ -133,7 +133,72 @@ font-size: 62.5%;
 }
 /*******PROJECT********/
 /* Mechi */
-
+.projects{
+  background-color: #8447e9;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+}
+.projects-container{
+  background-color: #8447e9;
+  color: white;
+  width: 100%;
+  margin-top: 20;
+  margin-left: 30px;
+  margin-bottom: 15px;  
+}
+.projects-title{
+  background-color: #8447e9;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  max-width: 112px;
+  max-height: 20px;
+  margin-top: 20px;
+}
+.projects-parrafo{
+  color: white;
+ 
+  display: none;
+}
+.projects-images{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.projects-images-blvck{
+  max-width: 522px;
+  max-height: 341px;
+  margin-bottom: 10px;
+}
+.projects-images-cream{
+  max-width: 522px;
+  max-height: 341px;
+  margin-bottom: 10px;
+}
+.projects-images-fredi{
+  max-width: 522px;
+  max-height: 341px;
+  margin-bottom: 10px;
+}
+.projects-images-apollo{
+  max-width: 522px;
+  max-height: 341px;
+  margin-bottom: 10px;
+}
+.projects-text-line{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+@media screen and (min-width:768px) {
+  .projects-parrafo{
+    display: inline-block;
+  }
+  
+}
 /*******NEWS********/
 /* Mari */
 

@@ -275,17 +275,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 9rem;
   }
   .hero-title {
     display: inline-block;
   }
   .underline {
-    display: inline-block;
-    margin-left: 20rem;
-    width: 15vw;
-    margin-bottom: 10rem;
+    background-image: url("../img/wavy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19rem;
+    height: 2.7rem;
+    position: absolute;
+    margin-top: 10.6rem;
+    margin-left: 25rem;
   }
-
+  
   .hero-subtitle {
     display: inline-block;
     margin-block: 13.2rem;

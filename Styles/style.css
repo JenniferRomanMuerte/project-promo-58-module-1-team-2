@@ -77,6 +77,7 @@
 
 .hero-title {
   font-size: 6.2rem;
+  font-weight: var(--montserrat-semibold);
   color: var(--color-tertiary-variant );
   margin-top: 1.96rem;
   margin-bottom: 1.33rem;
@@ -89,12 +90,14 @@
 .hero-button {
   background-color: var(--color-primary);
   color: var(--color-secondary-variant);
-  padding: 20px;
+  padding: 2rem;
   border: none;
+  font-weight: var(--montserrat-medium);
 }
 
 .hero-subtitle {
   font-size: 4rem;
+  font-weight: var(--montserrat-medium);
   display: none;
   margin-top: 1.32rem;
 }
@@ -118,23 +121,32 @@
   margin-bottom: 2.3rem;
 }
 
+
 .hero-container-image {
   height: 14.4rem;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
-.hero-img {
-  height: 100%; /* se adapta al alto del contenedor */
-  width: auto; /* ocupa el anchoi necesario */
-  object-fit: cover; /* rellena el espacio sin deformarse */
-  object-position: center; /* centra la parte visible */
-  display: block;
+.programming{
+  background-image: url("../img/hero-programing.png");
+  background-repeat: no-repeat;
+}
+
+.marketing{
+  background-image: url("../img/hero_marketing.png");
+  background-repeat: no-repeat;
+}
+
+.design{
+  background-image: url("../img/hero_design.png");
+  background-repeat: no-repeat;
 }
 
 .hero-title-img {
   font-size: 3.2rem;
+  font-weight: var(--montserrat-medium);
   color: var(--color-primary);
   margin-block: 1rem;
 }
@@ -147,7 +159,7 @@
 
 .hero-read-more {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: var(--montserrat-medium);
   text-decoration: underline wavy var(--color-primary); /* Línea ondulada*/
   text-underline-offset: 1rem; /* separación entre texto y subrayado */
   text-decoration-thickness: 0.05rem; /* grosor de la línea */
@@ -167,7 +179,7 @@
   width: 100%;
   margin-top: 20;
   margin-left: 30px;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 .projects-title{
   background-color: #8447e9;
@@ -186,26 +198,13 @@
   justify-content: center;
   align-items: center;
 }
-.projects-images-blvck{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
+
+.projects-section{
+  display: flex;
+  flex-direction: column;
+
 }
-.projects-images-cream{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
-}
-.projects-images-fredi{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
-}
-.projects-images-apollo{
-  max-width: 522px;
-  max-height: 341px;
-  margin-bottom: 10px;
-}
+
 .projects-text-line{
   color: white;
   display: flex;
@@ -217,11 +216,11 @@
   .projects-parrafo{
     display: inline-block;
   }
-  
+
 }
 /*******NEWS********/
 /* Mari */
-news {
+.news {
   margin-top: 9.3rem;
   margin-left: 0.1rem;
   padding-inline: 3.8rem;

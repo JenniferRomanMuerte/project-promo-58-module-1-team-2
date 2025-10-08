@@ -157,9 +157,12 @@
 .hero-read-more {
   font-size: 1.6rem;
   font-weight: var(--montserrat-medium);
-  text-decoration: underline wavy var(--color-primary); /* Línea ondulada*/
-  text-underline-offset: 1rem; /* separación entre texto y subrayado */
-  text-decoration-thickness: 0.05rem; /* grosor de la línea */
+  text-decoration: underline wavy var(--color-primary);
+  /* Línea ondulada*/
+  text-underline-offset: 1rem;
+  /* separación entre texto y subrayado */
+  text-decoration-thickness: 0.05rem;
+  /* grosor de la línea */
 }
 
 /*******PROJECT********/
@@ -170,6 +173,7 @@
   overflow: hidden;
   width: 100%;
 }
+
 .projects-container {
   background-color: #8447e9;
   color: white;
@@ -178,6 +182,7 @@
   margin-left: 30px;
   margin-bottom: 15px;
 }
+
 .projects-title {
   background-color: #8447e9;
   color: white;
@@ -185,20 +190,24 @@
   display: flex;
   margin-block: 30px;
 }
+
 .projects-parrafo {
   color: white;
   display: none;
 }
+
 .projects-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .projects.section {
   display: flex;
   flex-direction: column;
 }
+
 .projects-text-line {
   color: white;
   display: flex;
@@ -206,11 +215,7 @@
   align-items: center;
   padding: 20px 20px;
 }
-@media screen and (min-width: 768px) {
-  .projects-parrafo {
-    display: inline-block;
-  }
-}
+
 /*******NEWS********/
 /* Mari */
 .news {
@@ -219,9 +224,14 @@
   padding-inline: 3.8rem;
   width: 100vw;
 }
+
 .news-title {
   font-size: 4rem;
+  font-style: var(--montserrat-medium);
+  padding-block: 3rem;
+  margin-bottom: 1.49rem;
 }
+
 .news-container {
   display: flex;
   flex-direction: column;
@@ -229,14 +239,24 @@
   gap: 3rem;
   margin-bottom: 3rem;
 }
+
 .news-img {
   width: 100%;
 }
+
 .news-paragraph {
   font-size: 2.4rem;
   text-align: center;
   gap: 3rem;
+  font-style: var(--montserrat-medium);
 }
+
+.news-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .news-button {
   background-color: #fff;
   color: var(--color-primary);
@@ -246,58 +266,82 @@
   padding-block: 2rem;
   width: 20rem;
   font-size: 1.8rem;
-  margin-bottom: 0g;
 }
-@media screen and (min-width: 768px) {
-  /*******NEWS********/
-  /* Mari */
-  news {
-    margin-top: 9.3rem;
-    margin-left: 0.1rem;
-    padding-inline: 3.8rem;
-    width: 100vw;
-  }
-  .news-title {
-    font-size: 4rem;
-  }
-  .news-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 3rem;
-  }
-  .news-img {
-    width: 100%;
-  }
-  .news-paragraph {
-    font-size: 2.4rem;
-    text-align: center;
-    gap: 3rem;
-  }
-  .news-button {
-    background-color: #fff;
-    color: var(--color-primary);
-    border: 0.1rem var(--color-primary) solid;
-    display: inline-block;
-    padding-inline: 2rem;
-    padding-block: 2rem;
-    width: 20rem;
-    font-size: 1.8rem;
-    margin-bottom: 0g;
-  }
-  /*******LIST********/
-  /* Susana */
 
-  /*******FOOTER********/
-  /* Mechi */
+.news-3-noticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /*********MEDIA-QUERIES********/
+/*******LIST********/
+/* Susana */
+.list {
+  background-image: url('../img/list-background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 43, 4rem;
+  width: 21, 6rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  position: relative;
+}
+
+.project-list {
+  text-align: center;
+  color: white;
+}
+
+.span-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.info-contact {
+  display: none;
+}
+
+
+/*******FOOTER********/
+/* Mechi */
+
+/*********MEDIA-QUERIES********/
+@media (width >768px) {
 
   /* Susana */
   .menu-icon {
     display: none;
   }
+
+  .list {
+    background-image: url('/img/list-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .info-contact {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    background-color: var(--color-primary);
+    text-decoration: none;
+    padding: 2rem;
+    margin-left: 33rem;
+    margin-right: 33rem;
+  }
+
 
   /* Jennifer */
   .hero-container-title {
@@ -306,9 +350,11 @@
     align-items: center;
     margin-bottom: 9rem;
   }
+
   .hero-title {
     display: inline-block;
   }
+
   .underline {
     background-image: url("../img/wavy.png");
     background-repeat: no-repeat;
@@ -332,6 +378,7 @@
     gap: 3rem;
     padding-inline: 4rem;
   }
+
   .hero-parrafo {
     display: inline-block;
     max-width: 30rem;
@@ -342,8 +389,38 @@
   }
 
   /* Mechi */
+  .projects-parrafo {
+    display: inline-block;
+  }
 
   /* Mari */
-}
+  .news {
+    margin-top: 8.8rem;
+    margin-left: 0.8rem;
+    padding-left: 7rem;
+    margin-right: 6.2rem;
+  }
 
-/* Mari */
+  .news-3-noticias {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 2rem;
+  }
+
+  .news-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-paragraph {
+    margin-bottom: 8.8rem;
+  }
+
+  .news-button-section {
+    display: block;
+    margin-bottom: 8.8rem;
+  }
+}

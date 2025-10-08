@@ -33,11 +33,8 @@ El diseño está pensado para ser **responsive**, adaptándose tanto a dispositi
 
 1. Clona el repositorio:
 
-```bash
-git clone https://github.com/JenniferRomanMuerte/project-promo-58-module-1-team-2.git
+   git clone https://github.com/JenniferRomanMuerte/project-promo-58-module-1-team-2.git
 
 2. Abre el archivo `index.html` en tu navegador favorito (Chrome, Firefox, Edge).
 
 3. Para ver los cambios en tiempo real, puedes usar **Live Server** o cualquier servidor local.
-
-```

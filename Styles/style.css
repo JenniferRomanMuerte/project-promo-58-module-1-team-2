@@ -186,9 +186,12 @@
 .projects-title {
   background-color: #8447e9;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
-  margin-block: 30px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-inline: 88px;
+  font-weight: var(--montserrat-medium);
 }
 
 .projects-parrafo {
@@ -201,7 +204,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: 8, 8rem;
+  padding: 20px;
 }
 
 .projects-section {
@@ -215,13 +218,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 40px;
+}
+.projects-images-title {
+  font-size: 20px;
+  font-weight: var(--montserrat-medium);
 }
 .projects-container-img {
-  width: 52.2rem;
+  width: 80%;
+  margin: 0 auto;
 }
 .projects-img {
   width: 100%;
+}
+.projects-images-text {
+  color: rgb(179, 176, 176);
+}
+.projects-button {
+  display: flex;
+  justify-content: center;
+  margin-block: 38px;
+}
+.projects-text-button {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 2rem;
+  border: 1px solid #fff;
+  font-weight: var(--montserrat-medium);
 }
 
 /*******NEWS********/
@@ -317,6 +340,15 @@
 
 /*******FOOTER********/
 /* Mechi */
+.footer {
+  background-color: #000;
+  color: #8447e9;
+  font-size: 30px;
+  font-weight: var(--montserrat-medium);
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
 
 /*********MEDIA-QUERIES********/
 @media (width >768px) {

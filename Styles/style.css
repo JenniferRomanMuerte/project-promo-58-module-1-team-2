@@ -26,6 +26,10 @@
   --roboto-bold: 700;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*******HEADER********/
 /* Susana */
 .header {
@@ -288,7 +292,7 @@
 /* Susana */
 .list {
   position: relative;
-  background-image: url('/img/list-background.jpg');
+  background-image: url("/img/list-background.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -318,7 +322,6 @@
   font-size: 3.7em;
   padding: 3rem, 0;
   font-weight: 480;
-
 }
 
 .info-contact {
@@ -330,7 +333,6 @@
 
 /*********MEDIA-QUERIES********/
 @media (width >768px) {
-
   /* Susana */
   .menu-icon {
     display: none;
@@ -363,7 +365,6 @@
     margin-right: 33rem;
     z-index: 1;
   }
-
 
   /* Jennifer */
   .hero-container-title {
@@ -422,25 +423,21 @@
     padding-left: 7rem;
     margin-right: 6.2rem;
   }
-
   .news-3-noticias {
     display: flex;
     flex-direction: row;
     width: 100vw;
     gap: 2rem;
   }
-
   .news-container {
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .news-paragraph {
     margin-bottom: 8.8rem;
   }
-
   .news-button-section {
     display: block;
     margin-bottom: 8.8rem;

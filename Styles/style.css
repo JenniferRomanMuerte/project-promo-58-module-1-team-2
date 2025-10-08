@@ -201,11 +201,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-inline: 8, 8rem;
 }
 
-.projects.section {
+.projects-section {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .projects-text-line {
@@ -213,7 +215,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px;
+}
+.projects-container-img {
+  width: 52.2rem;
+}
+.projects-img {
+  width: 100%;
 }
 
 /*******NEWS********/
@@ -277,7 +285,7 @@
 /*******LIST********/
 /* Susana */
 .list {
-  background-image: url('../img/list-background.jpg');
+  background-image: url("../img/list-background.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -307,20 +315,18 @@
   display: none;
 }
 
-
 /*******FOOTER********/
 /* Mechi */
 
 /*********MEDIA-QUERIES********/
 @media (width >768px) {
-
   /* Susana */
   .menu-icon {
     display: none;
   }
 
   .list {
-    background-image: url('/img/list-background.jpg');
+    background-image: url("/img/list-background.jpg");
     background-size: cover;
     background-position: center;
     height: 40rem;
@@ -341,7 +347,6 @@
     margin-left: 33rem;
     margin-right: 33rem;
   }
-
 
   /* Jennifer */
   .hero-container-title {

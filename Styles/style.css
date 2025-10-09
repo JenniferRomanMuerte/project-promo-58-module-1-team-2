@@ -326,6 +326,7 @@ html {
   text-align: center;
   width: 100%;
   margin-top: 1.7rem;
+  min-height: 35rem;
 }
 
 .list::before {
@@ -333,11 +334,13 @@ html {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 0;
+  z-index: -1;
 }
 
-.project-list {
-  position: relative;
+/* Contiene el texto y el botón */
+.footer-project-list {
+  display: flex; /* Para poder posicionar los 2 elementos*/
+  flex-direction: column; /* Para poner uno debajo de otro*/
   padding-top: 8rem;
   padding-bottom: 11rem;
 }
@@ -346,20 +349,39 @@ html {
   font-size: 6.2vw;
 }
 
+/* Botón ocultado en mobile*/
 .info-contact {
   display: none;
 }
 
 /*******FOOTER********/
-/* Mechi */
+/* Ahora contiene 2 elementos la seccion de list y la seccion negra*/
 .footer {
-  background-color: #000;
-  color: #8447e9;
-  font-size: 30px;
-  font-weight: var(--montserrat-medium);
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 30px;
+  display: flex; /* Para poder posicionarlos*/
+  flex-direction: column; /* Para ponerlos uno debajo de otro*/
+  align-items: center; /* Para centrar la imagen horizontalmente*/
+}
+
+/* Seccion negra que contiene AdaDev y links*/
+.footer-black {
+  width: 100%;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+
+/* AdaDev del footer*/
+.footer-text {
+  font-size: 6.4rem;
+  font-family: "Roboto";
+  font-weight: var(--roboto-bold);
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-bottom: 8rem;
+}
+
+/* Ocultamos los links en mobile*/
+.footer-links {
+  display: none;
 }
 
 /*********MEDIA-QUERIES********/
@@ -367,33 +389,6 @@ html {
   /* Susana */
   .menu-icon {
     display: none;
-  }
-
-  .list {
-    height: 40rem;
-    display: flex;
-    width: 75%;
-    margin: auto;
-  }
-  
-  .span-list {
-    font-size: 6.2vw;
-    padding: 5rem, 0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .info-contact {
-    display: inline-block;
-    justify-content: center;
-    color: #fff;
-    font-size: 2rem;
-    background-color: var(--color-primary);
-    text-decoration: none;
-    margin-top: 5.8rem;
-    margin-inline: auto;
-    padding: 2rem 4.9rem;
-    z-index: 1;
   }
 
   /* Jennifer */
@@ -442,8 +437,69 @@ html {
   }
 
   /* Mechi */
+  /* Section project*/
   .projects-parrafo {
     display: inline-block;
+  }
+
+  /* Section footer*/
+  .footer {
+    position: relative; /* Para que muestre list y ésta se posicione con respecto a él*/
+  }
+
+  .list {
+    position: absolute; /* Para poder posicionarla con referencia al footer*/
+    height: 40rem;
+    width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
+    bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
+  }
+
+  .span-list {
+    font-size: 6.2vw;
+    padding: 5rem, 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  /* botón*/
+  .info-contact {
+    display: inline-block;
+    color: var(--color-secondary-variant);
+    font-size: 2rem;
+    background-color: var(--color-primary); /* Usamos las variables del root para los colores*/
+    text-decoration: none;
+    margin-top: 5.8rem;
+    margin-inline: auto; /* Margen lateral auto, de esta manera le da el mismo espacio a los dos lados*/
+    padding: 2rem 4.9rem;
+    z-index: 1;
+  }
+
+  /* section black*/
+  .footer-black {
+    display: flex; /* Para poder posicionar los elementos*/
+    flex-direction: row; /* Para que los ponga en fila*/
+    align-items: center; /* Para que los centre verticalmente*/
+    justify-content: space-around; /* Para que los separe a lois laterales dejandoles un espacio con el magen de la pantalla*/
+    height: 57rem; /* Le damos una altura fija para que se vea bien la imagen de fondo*/
+    background-color: transparent;  /* Le quitamos el color de fondo que tenia en mobile*/
+    background-image: url("../img/svg.svg"); /* Le asignamos la imagen como fondo*/
+    background-repeat: no-repeat; /* Le decimos que no repita aunque el ancho sea más grande que el ancho de la imagen*/
+    background-size: cover; /* Cubre todo el contenedor*/
+  }
+
+  .footer-text{
+    padding-left: 0rem; /* Le quitamos el left que tenia en mobile*/
+  }
+
+  .footer-links {
+    display: flex; /* Para poder posicionarlos*/
+    gap: 6rem; /* Espacio entre ellos*/
+    font-size: 2.4rem;
+  }
+
+  .footer-links a {
+    text-decoration: none; /* Le quitamos el subrayado*/
+    color: var(--color-secondary-variant); /* Le asignamos el color de la variable*/
   }
 
   /* Mari */
@@ -452,6 +508,7 @@ html {
     margin-left: 0.8rem;
     padding-left: 7rem;
     margin-right: 6.2rem;
+    margin-bottom: 30rem;
   }
   .news-3-noticias {
     display: flex;

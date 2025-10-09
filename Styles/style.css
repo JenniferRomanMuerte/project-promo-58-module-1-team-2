@@ -194,12 +194,11 @@ html {
   display: flex;
   margin-top: 70px;
   margin-bottom: 50px;
-  margin-inline: 88px;
+  margin-inline: 74px;
   font-weight: var(--montserrat-medium);
 }
 
 .projects-parrafo {
-  color: white;
   display: none;
 }
 
@@ -247,7 +246,7 @@ html {
 }
 .projects-text-button {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-secondary-variant);
   padding: 2rem;
   border: 1px solid #fff;
   font-weight: var(--montserrat-medium);
@@ -261,14 +260,12 @@ html {
   padding-inline: 3.8rem;
   width: 100vw;
 }
-
 .news-title {
   font-size: 4rem;
-  font-style: var(--montserrat-medium);
+  font-weight: var(--montserrat-medium);
   padding-block: 3rem;
   margin-bottom: 1.49rem;
 }
-
 .news-container {
   display: flex;
   flex-direction: column;
@@ -276,24 +273,20 @@ html {
   gap: 3rem;
   margin-bottom: 3rem;
 }
-
 .news-img {
   width: 100%;
 }
-
 .news-paragraph {
   font-size: 2.4rem;
   text-align: center;
-  gap: 3rem;
-  font-style: var(--montserrat-medium);
+  font-weight: var(--montserrat-medium);
+  text-wrap: balance;
 }
-
 .news-button-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .news-button {
   background-color: #fff;
   color: var(--color-primary);
@@ -304,13 +297,11 @@ html {
   width: 20rem;
   font-size: 1.8rem;
 }
-
 .news-3-noticias {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 /*******LIST********/
 /* Susana */
 .list {
@@ -389,6 +380,33 @@ html {
   /* Susana */
   .menu-icon {
     display: none;
+  }
+
+  .list {
+    height: 40rem;
+    display: flex;
+    width: 75%;
+    margin: auto;
+  }
+
+  .span-list {
+    font-size: 6.2vw;
+    padding: 5rem, 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .info-contact {
+    display: inline-block;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    background-color: var(--color-primary);
+    text-decoration: none;
+    margin-top: 5.8rem;
+    margin-inline: auto;
+    padding: 2rem 4.9rem;
+    z-index: 1;
   }
 
   /* Jennifer */

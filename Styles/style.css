@@ -33,40 +33,39 @@ html {
 /*******HEADER********/
 /* Susana */
 .header {
-  display: flex; /*contenedor flexible*/
+  display: flex; /*contenedor flexible para modificar contenido*/
   width: 100%; /*Ocupa el ancho de la página*/
   justify-content: space-between; /*Reparte el contenido espaciado*/
-  padding: 3rem; /*espacio entre el borde y el contenido*/
+  padding: 3rem; /*espacio entre el borde y el contenido del header*/
 }
 
 .logo {
-  color: var(--color-primary); /*color establecido*/
-  font-size: 3rem; /*tamaño fuente*/
+  color: var(--color-primary); /*color establecido al logo*/
+  font-size: 3rem; /*tamaño fuente del logo*/
   font-weight: 600; /*negrita*/
 }
 
 .menu-icon {
-  color: var(--color-primary); /*color establecido*/
-  display: flex; /*contenedor flexible*/
-  flex-direction: column; /*ordena elementos en columna*/
-  justify-content: space-between; /*Reparte el contenido espaciado*/
+  display: flex; /*contenedor flexible para modificar el elemento*/
+  flex-direction: column; /*ordena los span en columna*/
+  justify-content: space-between; /*deja un espacio entre los span verticalmente*/
   width: 3em;  /*ancho*/
   height: 2.4em; /*alto*/
-  cursor: pointer; /*cambio puntero*/
+  cursor: pointer; /*sombreado al pulsar*/
 }
 
 .menu-icon span {
-  height: 3px; /*altura*/
-  width: 100%; /*Ocupa el ancho de la página*/
-  background-color: var(--color-primary); /*color de fondo*/
+  height: 3px; /*alto del color del span*/
+  width: 100%; /*ancho del color del span*/
+  background-color: var(--color-primary); /*color del span*/
 }
 
 .links {
-  display: none; /*oculto*/
+  display: none; /*enlaces del desplegable ocultos*/
 }
 
 .contact-link {
-  display: none; /*oculto*/
+  display: none; /*enlace de contacto oculto*/
 }
 /*******HERO********/
 /* Jennifer */
@@ -312,25 +311,25 @@ html {
 /* Susana */
 .list {
   position: relative; /*?*/
-  background-image: url("/img/list-background.jpg"); /*imagen de fondo*/
+  background-image: url("/img/list-background.jpg"); /*imagen de fondo de la sección*/
   background-size: cover;  /*la imagen rellena el fondo*/
   background-position: center; /*la imagen se centra*/
-  display: flex; /*contenedor flexible*/
-  align-items: center; /*centra todos los elementos en vertical*/
+  display: flex; /*contenedor flexible para modificar contenido*/
+  align-items: center; /*centra todos los elementos verticalmente*/
   justify-content: center;  /*centra todos los elementos horizontalmente*/
   z-index: 1;  /*?*/
-  color: var(--color-secondary-variant);  /*color establecido*/
+  color: var(--color-secondary-variant);  /*color establecido para el texto*/
   text-align: center;   /*texto en el centro*/
-  width: 100%;  /*Ocupa el ancho de la página*/
-  margin-top: 1.7rem; /*margen desde arriba*/
+  width: 100%;  /*Ocupa el ancho de la página, posible cambio de eliminar?*/
+  margin-top: 1.7rem; /*margen desde arriba posible cambio de eliminar?*/
   min-height: 35rem;  /*?*/
 }
 
-.list::before {
-  content: ""; /*aplica al contenido*/
+.list::before { /*elemento para sombreado*/
+  content: ""; /*aplica al contenido para el sombreado*/
   position: absolute;  /*?*/
-  inset: 0;  /*?*/
-  background-color: rgba(0, 0, 0, 0.7);  /*color de fondo para el oscurecido de la imagen*/
+  inset: 0; /*ocupa todo el espacio del elemento*/
+  background-color: rgba(0, 0, 0, 0.7);  /*color de fondo para el sombreado de la imagen*/
   z-index: -1;  /*?*/
 }
 
@@ -343,7 +342,7 @@ html {
 }
 
 .span-list {
-  font-size: 6.2vw; /*tamaño fuente (posible cambio de tamaño?) */
+  font-size: 6.2vw; /*tamaño fuente (posible cambio de tamaño a más?) */
 }
 
 /* Botón ocultado en mobile*/
@@ -384,8 +383,9 @@ html {
 /*********MEDIA-QUERIES********/
 @media (width >768px) {
   /* Susana */
+  /*HEADER*/
   .menu-icon {
-    display: none; /*oculto*/
+    display: none; /*oculto el desplegable que contiene los enlaces*/
   }
 
   .links {
@@ -402,60 +402,29 @@ html {
   }
 
   .links a {
+    color: var(--color-tertiary-variant); /*color de los enlaces*/
     font-weight: 500; /*negrita*/
     cursor: pointer; /*cambia el cursor por una mano*/
   }
 
   .links .home-link {
-    color: var(--color-primary); /*color establecido*/
+    color: var(--color-primary); /*color establecido para el enlace home*/
   }
 
   .links ul a:hover {
-    color: var(--color-primary); /*color establecido*/
+    color: var(--color-primary); /*color establecido para que cambie al pasar el cursor por los enlaces*/
   }
 
   .contact-link {
     display: inline-block; /*se coloca en linea junto con el resto de elementos*/
     justify-self: end; /*alinea el contenido desde la derecha*/
-    background-color: var(--color-primary); /*color de fondo*/
-    color: var(--color-secondary); /*color establecido*/
+    background-color: var(--color-primary); /*color de fondo del texto*/
+    color: var(--color-secondary); /*color establecido para el texto*/
     padding: 1.2rem 2.4rem; /*espacio entre el borde y el contenido*/
-    font-size: 1.6rem; /*tamaño fuente*/
+    font-size: 1.6rem; /*tamaño fuente del texto*/
     font-weight: 500; /*negrita*/
     cursor: pointer; /*cambia el cursor por una mano*/
     text-decoration: none; /*quita una linea blanca debajo del texto*/
-  }
-
-  .contact-link:hover {
-    background-color: var(--color-primary); /*color de fondo*/
-  }
-
-
-  .list {
-    height: 40rem; /*altura*/
-    display: flex; /*contenedor flexible*/
-    width: 75%; /*anchura*/
-    margin: auto; /*centra el elemento*/
-  }
-
- .span-list {
-    font-size: 6.2vw; /*tamaño fuente*/
-    padding: 5rem, 0; /*espacio entre el borde y el contenido*/
-    margin-left: 0.5rem; /*margen desde la izquierda*/
-    margin-right: 0.5rem; /*margen desde la derecha*/
-  }
-
-  .info-contact {
-    display: inline-block;  /*contenedor flexible*/
-    justify-content: center;  /*centra el elemento horizontalmente*/
-    color: var(--color-secondary-variant); /*color establecido*/
-    font-size: 2rem;  /*tamaño fuente*/
-    background-color: var(--color-primary); /*color de fondo*/
-    text-decoration: none; /*quita una linea blanca debajo del texto*/
-    margin-top: 5.8rem; /*margen desde arriba*/
-    margin-inline: auto;
-    padding: 2rem 4.9rem; /*espacio entre el borde y el contenido*/
-    z-index: 1;
   }
 
   /* Jennifer */
@@ -516,16 +485,16 @@ html {
 
   .list {
     position: absolute; /* Para poder posicionarla con referencia al footer*/
-    height: 40rem;
+    height: 40rem;  /*altura*/
     width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
     bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
   }
 
   .span-list {
-    font-size: 6.2vw;
-    padding: 5rem, 0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    font-size: 6.2vw; /*tamaño fuente del texto*/
+    padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
+    margin-left: 0.5rem;  /*margen desde la izquierda*/
+    margin-right: 0.5rem;  /*margen desde la derecha*/
   }
 
   /* botón*/

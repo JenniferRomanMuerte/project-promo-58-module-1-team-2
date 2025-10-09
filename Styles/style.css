@@ -33,35 +33,41 @@ html {
 /*******HEADER********/
 /* Susana */
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
+  display: flex; /*contenedor flexible*/
+  width: 100%; /*Ocupa el ancho de la página*/
+  justify-content: space-between; /*Reparte el contenido espaciado*/
+  padding: 3rem; /*espacio entre el borde y el contenido*/
 }
 
 .logo {
-  color: var(--color-primary);
-  font-size: 300%;
-  font-weight: 600;
+  color: var(--color-primary); /*color establecido*/
+  font-size: 3rem; /*tamaño fuente*/
+  font-weight: 600; /*negrita*/
 }
 
 .menu-icon {
-  color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 3em;
-  height: 2em;
+  color: var(--color-primary); /*color establecido*/
+  display: flex; /*contenedor flexible*/
+  flex-direction: column; /*ordena elementos en columna*/
+  justify-content: space-between; /*Reparte el contenido espaciado*/
+  width: 3em;  /*ancho de la página*/
+  height: 2.4em; /*alto de la página*/
+  cursor: pointer; /*cambio puntero*/
 }
 
 .menu-icon span {
-  display: block;
-  height: 3px;
-  background-color: var(--color-primary);
-  border-radius: 2px;
+  height: 3px; /*altura*/
+  width: 100%; /*Ocupa el ancho de la página*/
+  background-color: var(--color-primary); /*color de fondo*/
 }
 
+.links {
+  display: none; /*oculto*/
+}
+
+.contact-link {
+  display: none; /*oculto*/
+}
 /*******HERO********/
 /* Jennifer */
 
@@ -379,8 +385,51 @@ html {
 @media (width >768px) {
   /* Susana */
   .menu-icon {
-    display: none;
+    display: none; /*oculto*/
   }
+
+  .links {
+    font-size: 1.6rem; /*tamaño fuente*/
+    display: flex; /*contenedor flexible*/
+    justify-content: space-between; /*Reparte el contenido espaciado*/
+    align-items: center; /*centra todos los elementos en vertical*/
+  }
+
+  .links ul {
+    display: flex; /*contenedor flexible*/
+    list-style: none; /*quita los puntos de la lista*/
+    gap: 3rem; /*separación de los elementos*/
+  }
+
+  .links a {
+    font-weight: 500; /*negrita*/
+    cursor: pointer; /*cambia el cursor por una mano*/
+  }
+
+  .links .home-link {
+    color: var(--color-primary); /*color establecido*/
+  }
+
+  .links ul a:hover {
+    color: var(--color-primary); /*color establecido*/
+  }
+
+  .contact-link {
+    display: inline-block; /*se coloca en linea junto con el resto de elementos*/
+    justify-self: end; /*alinea el contenido desde la derecha*/
+    background-color: var(--color-primary); /*color de fondo*/
+    color: var(--color-secondary); /*color establecido*/
+    padding: 1.2rem 2.4rem; /*espacio entre el borde y el contenido*/
+    font-size: 1.6rem; /*tamaño fuente*/
+    font-weight: 500; /*negrita*/
+    cursor: pointer; /*cambia el cursor por una mano*/
+    text-decoration: none; /*quita una linea blanca debajo del texto*/
+  }
+
+  .contact-link:hover {
+    background-color: var(--color-primary); /*color de fondo*/
+  }
+
 
   .list {
     height: 40rem;

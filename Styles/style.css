@@ -194,12 +194,11 @@ html {
   display: flex;
   margin-top: 70px;
   margin-bottom: 50px;
-  margin-inline: 88px;
+  margin-inline: 74px;
   font-weight: var(--montserrat-medium);
 }
 
 .projects-parrafo {
-  color: white;
   display: none;
 }
 
@@ -247,7 +246,7 @@ html {
 }
 .projects-text-button {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-secondary-variant);
   padding: 2rem;
   border: 1px solid #fff;
   font-weight: var(--montserrat-medium);
@@ -357,7 +356,7 @@ html {
   background-color: #000;
   color: #8447e9;
   font-size: 30px;
-  font-weight: var(--montserrat-medium);
+  font-weight: var(--roboto-bold);
   padding-top: 40px;
   padding-left: 40px;
   padding-bottom: 30px;
@@ -445,9 +444,23 @@ html {
 
   /* Mechi */
   .projects-parrafo {
+    font-size: 2.5rem;
+    font-family: var(--montserrat-medium);
+    color: var(--color-secondary-variant);
     display: inline-block;
+    padding-inline: 88px;
   }
-
+  .projects-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .projects-section {
+    width: 38%;
+  }
+  .projects-button {
+    display: block;
+    padding-left: 14.1rem;
+  }
   /* Mari */
   .news {
     margin-top: 8.8rem;

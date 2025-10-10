@@ -173,8 +173,8 @@ html {
 /* Mechi */
 .projects {
   background-color: #8447e9;
-  background-attachment: fixed;
-  overflow: hidden;
+  background-attachment: fixed; /* esto esta bien?*/
+  overflow: hidden; /* esto es para evitar scroll?*/
   width: 100%;
 }
 
@@ -237,7 +237,7 @@ html {
   width: 100%;
 }
 .projects-images-text {
-  color: rgb(179, 176, 176);
+  color: rgb(179, 176, 176); /* cambio este color?*/
 }
 .projects-button {
   display: flex;
@@ -374,7 +374,7 @@ html {
     width: 75%;
     margin: auto;
   }
-  
+
   .span-list {
     font-size: 6.2vw;
     padding: 5rem, 0;

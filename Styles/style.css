@@ -337,12 +337,7 @@ html {
   content: ""; /*aplica al contenido para el sombreado*/
   position: absolute; /*?*/
   inset: 0; /*ocupa todo el espacio del elemento*/
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /*color de fondo para el sombreado de la imagen*/
+  background-color: rgba(0,0,0,0.7); /*color de fondo para el sombreado de la imagen*/
   z-index: -1; /*?*/
 }
 
@@ -355,7 +350,7 @@ html {
 }
 
 .span-list {
-  font-size: 6.2vw; /*tamaño fuente (posible cambio de tamaño a más?) */
+  font-size: 7.2vw; /*tamaño fuente*/
 }
 
 /* Botón ocultado en mobile*/
@@ -545,7 +540,7 @@ html {
   }
 
   .span-list {
-    font-size: 6.2vw; /*tamaño fuente del texto*/
+    font-size: 4.2vw; /*tamaño fuente del texto*/
     padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
     margin-left: 0.5rem; /*margen desde la izquierda*/
     margin-right: 0.5rem; /*margen desde la derecha*/
@@ -556,9 +551,7 @@ html {
     display: inline-block;
     color: var(--color-secondary-variant);
     font-size: 2rem;
-    background-color: var(
-      --color-primary
-    ); /* Usamos las variables del root para los colores*/
+    background-color: var(--color-primary); /* Usamos las variables del root para los colores*/
     text-decoration: none;
     margin-top: 5.8rem;
     margin-inline: auto; /* Margen lateral auto, de esta manera le da el mismo espacio a los dos lados*/

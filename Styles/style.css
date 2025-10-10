@@ -508,7 +508,6 @@ html {
 
   .list {
     position: absolute; /* Para poder posicionarla con referencia al footer*/
-    height: 40rem; /*altura*/
     width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
     bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
   }

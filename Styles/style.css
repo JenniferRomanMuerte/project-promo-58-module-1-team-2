@@ -394,18 +394,6 @@ html {
     display: none; /*oculto el desplegable que contiene los enlaces*/
   }
 
-  .list {
-    height: 40rem;
-    display: flex;
-    width: 75%;
-    margin: auto;
-  }
-
-  .span-list {
-    font-size: 6.2vw;
-    padding: 5rem, 0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   .links {
     font-size: 1.6rem; /*tamaño fuente*/
     display: flex; /*contenedor flexible*/
@@ -494,7 +482,6 @@ html {
 
   /* Mechi */
   /* Section project*/
-
   .projects-parrafo {
     font-size: 2.5rem;
     font-family: var(--montserrat-medium);
@@ -512,6 +499,25 @@ html {
   .projects-button {
     display: block;
     padding-left: 14.1rem;
+  }
+
+  /* Section footer*/
+  .footer {
+    position: relative; /* Para que muestre list y ésta se posicione con respecto a él*/
+  }
+
+  .list {
+    position: absolute; /* Para poder posicionarla con referencia al footer*/
+    height: 40rem; /*altura*/
+    width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
+    bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
+  }
+
+  .span-list {
+    font-size: 6.2vw; /*tamaño fuente del texto*/
+    padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
+    margin-left: 0.5rem; /*margen desde la izquierda*/
+    margin-right: 0.5rem; /*margen desde la derecha*/
   }
 
   /* Section footer*/

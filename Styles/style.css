@@ -33,35 +33,40 @@ html {
 /*******HEADER********/
 /* Susana */
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
+  display: flex; /*contenedor flexible para modificar contenido*/
+  width: 100%; /*Ocupa el ancho de la página*/
+  justify-content: space-between; /*Reparte el contenido espaciado*/
+  padding: 3rem; /*espacio entre el borde y el contenido del header*/
 }
 
 .logo {
-  color: var(--color-primary);
-  font-size: 300%;
-  font-weight: 600;
+  color: var(--color-primary); /*color establecido al logo*/
+  font-size: 3rem; /*tamaño fuente del logo*/
+  font-weight: 600; /*negrita*/
 }
 
 .menu-icon {
-  color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 3em;
-  height: 2em;
+  display: flex; /*contenedor flexible para modificar el elemento*/
+  flex-direction: column; /*ordena los span en columna*/
+  justify-content: space-between; /*deja un espacio entre los span verticalmente*/
+  width: 3em; /*ancho*/
+  height: 2.4em; /*alto*/
+  cursor: pointer; /*sombreado al pulsar*/
 }
 
 .menu-icon span {
-  display: block;
-  height: 3px;
-  background-color: var(--color-primary);
-  border-radius: 2px;
+  height: 3px; /*alto del color del span*/
+  width: 100%; /*ancho del color del span*/
+  background-color: var(--color-primary); /*color del span*/
 }
 
+.links {
+  display: none; /*enlaces del desplegable ocultos*/
+}
+
+.contact-link {
+  display: none; /*enlace de contacto oculto*/
+}
 /*******HERO********/
 /* Jennifer */
 
@@ -260,14 +265,12 @@ html {
   padding-inline: 3.8rem;
   width: 100vw;
 }
-
 .news-title {
   font-size: 4rem;
-  font-style: var(--montserrat-medium);
+  font-weight: var(--montserrat-medium);
   padding-block: 3rem;
   margin-bottom: 1.49rem;
 }
-
 .news-container {
   display: flex;
   flex-direction: column;
@@ -275,24 +278,20 @@ html {
   gap: 3rem;
   margin-bottom: 3rem;
 }
-
 .news-img {
   width: 100%;
 }
-
 .news-paragraph {
   font-size: 2.4rem;
   text-align: center;
-  gap: 3rem;
-  font-style: var(--montserrat-medium);
+  font-weight: var(--montserrat-medium);
+  text-wrap: balance;
 }
-
 .news-button-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .news-button {
   background-color: #fff;
   color: var(--color-primary);
@@ -303,69 +302,96 @@ html {
   width: 20rem;
   font-size: 1.8rem;
 }
-
 .news-3-noticias {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 /*******LIST********/
 /* Susana */
 .list {
-  position: relative;
-  background-image: url("/img/list-background.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  width: 100%;
-  margin-top: 1.7rem;
+  position: relative; /*?*/
+  background-image: url("/img/list-background.jpg"); /*imagen de fondo de la sección*/
+  background-size: cover; /*la imagen rellena el fondo*/
+  background-position: center; /*la imagen se centra*/
+  display: flex; /*contenedor flexible para modificar contenido*/
+  align-items: center; /*centra todos los elementos verticalmente*/
+  justify-content: center; /*centra todos los elementos horizontalmente*/
+  z-index: 1; /*?*/
+  color: var(--color-secondary-variant); /*color establecido para el texto*/
+  text-align: center; /*texto en el centro*/
+  width: 100%; /*Ocupa el ancho de la página, posible cambio de eliminar?*/
+  margin-top: 1.7rem; /*margen desde arriba posible cambio de eliminar?*/
+  min-height: 35rem; /*?*/
 }
 
 .list::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 0;
+  /*elemento para sombreado*/
+  content: ""; /*aplica al contenido para el sombreado*/
+  position: absolute; /*?*/
+  inset: 0; /*ocupa todo el espacio del elemento*/
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /*color de fondo para el sombreado de la imagen*/
+  z-index: -1; /*?*/
 }
 
-.project-list {
-  position: relative;
-  padding-top: 8rem;
-  padding-bottom: 11rem;
+/* Contiene el texto y el botón */
+.footer-project-list {
+  display: flex; /* Para poder posicionar los 2 elementos*/
+  flex-direction: column; /* Para poner uno debajo de otro*/
+  padding-top: 8rem; /*espacio entre borde y contenido por arriba*/
+  padding-bottom: 11rem; /*espacio entre borde y contenido por abajo*/
 }
 
 .span-list {
-  font-size: 6.2vw;
+  font-size: 6.2vw; /*tamaño fuente (posible cambio de tamaño a más?) */
 }
 
+/* Botón ocultado en mobile*/
 .info-contact {
   display: none;
 }
 
 /*******FOOTER********/
-/* Mechi */
+/* Ahora contiene 2 elementos la seccion de list y la seccion negra*/
 .footer {
-  background-color: #000;
-  color: #8447e9;
-  font-size: 30px;
+  display: flex; /* Para poder posicionarlos*/
+  flex-direction: column; /* Para ponerlos uno debajo de otro*/
+  align-items: center; /* Para centrar la imagen horizontalmente*/
+}
+
+/* Seccion negra que contiene AdaDev y links*/
+.footer-black {
+  width: 100%;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+
+/* AdaDev del footer*/
+.footer-text {
+  font-size: 6.4rem;
+  font-family: "Roboto";
   font-weight: var(--roboto-bold);
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 30px;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-bottom: 8rem;
+}
+
+/* Ocultamos los links en mobile*/
+.footer-links {
+  display: none;
 }
 
 /*********MEDIA-QUERIES********/
 @media (width >768px) {
   /* Susana */
+  /*HEADER*/
   .menu-icon {
-    display: none;
+    display: none; /*oculto el desplegable que contiene los enlaces*/
   }
 
   .list {
@@ -380,19 +406,45 @@ html {
     padding: 5rem, 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  .links {
+    font-size: 1.6rem; /*tamaño fuente*/
+    display: flex; /*contenedor flexible*/
+    justify-content: space-between; /*Reparte el contenido espaciado*/
+    align-items: center; /*centra todos los elementos en vertical*/
   }
 
-  .info-contact {
-    display: inline-block;
-    justify-content: center;
-    color: #fff;
-    font-size: 2rem;
-    background-color: var(--color-primary);
-    text-decoration: none;
-    margin-top: 5.8rem;
-    margin-inline: auto;
-    padding: 2rem 4.9rem;
-    z-index: 1;
+  .links ul {
+    display: flex; /*contenedor flexible*/
+    list-style: none; /*quita los puntos de la lista*/
+    gap: 3rem; /*separación de los elementos*/
+  }
+
+  .links a {
+    color: var(--color-tertiary-variant); /*color de los enlaces*/
+    font-weight: 500; /*negrita*/
+    cursor: pointer; /*cambia el cursor por una mano*/
+  }
+
+  .links .home-link {
+    color: var(--color-primary); /*color establecido para el enlace home*/
+  }
+
+  .links ul a:hover {
+    color: var(
+      --color-primary
+    ); /*color establecido para que cambie al pasar el cursor por los enlaces*/
+  }
+
+  .contact-link {
+    display: inline-block; /*se coloca en linea junto con el resto de elementos*/
+    justify-self: end; /*alinea el contenido desde la derecha*/
+    background-color: var(--color-primary); /*color de fondo del texto*/
+    color: var(--color-secondary); /*color establecido para el texto*/
+    padding: 1.2rem 2.4rem; /*espacio entre el borde y el contenido*/
+    font-size: 1.6rem; /*tamaño fuente del texto*/
+    font-weight: 500; /*negrita*/
+    cursor: pointer; /*cambia el cursor por una mano*/
+    text-decoration: none; /*quita una linea blanca debajo del texto*/
   }
 
   /* Jennifer */
@@ -441,6 +493,8 @@ html {
   }
 
   /* Mechi */
+  /* Section project*/
+
   .projects-parrafo {
     font-size: 2.5rem;
     font-family: var(--montserrat-medium);
@@ -459,12 +513,78 @@ html {
     display: block;
     padding-left: 14.1rem;
   }
+
+  /* Section footer*/
+  .footer {
+    position: relative; /* Para que muestre list y ésta se posicione con respecto a él*/
+  }
+
+  .list {
+    position: absolute; /* Para poder posicionarla con referencia al footer*/
+    height: 40rem; /*altura*/
+    width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
+    bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
+  }
+
+  .span-list {
+    font-size: 6.2vw; /*tamaño fuente del texto*/
+    padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
+    margin-left: 0.5rem; /*margen desde la izquierda*/
+    margin-right: 0.5rem; /*margen desde la derecha*/
+  }
+
+  /* botón*/
+  .info-contact {
+    display: inline-block;
+    color: var(--color-secondary-variant);
+    font-size: 2rem;
+    background-color: var(
+      --color-primary
+    ); /* Usamos las variables del root para los colores*/
+    text-decoration: none;
+    margin-top: 5.8rem;
+    margin-inline: auto; /* Margen lateral auto, de esta manera le da el mismo espacio a los dos lados*/
+    padding: 2rem 4.9rem;
+    z-index: 1;
+  }
+
+  /* section black*/
+  .footer-black {
+    display: flex; /* Para poder posicionar los elementos*/
+    flex-direction: row; /* Para que los ponga en fila*/
+    align-items: center; /* Para que los centre verticalmente*/
+    justify-content: space-around; /* Para que los separe a lois laterales dejandoles un espacio con el magen de la pantalla*/
+    height: 57rem; /* Le damos una altura fija para que se vea bien la imagen de fondo*/
+    background-color: transparent; /* Le quitamos el color de fondo que tenia en mobile*/
+    background-image: url("../img/svg.svg"); /* Le asignamos la imagen como fondo*/
+    background-repeat: no-repeat; /* Le decimos que no repita aunque el ancho sea más grande que el ancho de la imagen*/
+    background-size: cover; /* Cubre todo el contenedor*/
+  }
+
+  .footer-text {
+    padding-left: 0rem; /* Le quitamos el left que tenia en mobile*/
+  }
+
+  .footer-links {
+    display: flex; /* Para poder posicionarlos*/
+    gap: 6rem; /* Espacio entre ellos*/
+    font-size: 2.4rem;
+  }
+
+  .footer-links a {
+    text-decoration: none; /* Le quitamos el subrayado*/
+    color: var(
+      --color-secondary-variant
+    ); /* Le asignamos el color de la variable*/
+  }
+
   /* Mari */
   .news {
     margin-top: 8.8rem;
     margin-left: 0.8rem;
     padding-left: 7rem;
     margin-right: 6.2rem;
+    margin-bottom: 30rem;
   }
   .news-3-noticias {
     display: flex;

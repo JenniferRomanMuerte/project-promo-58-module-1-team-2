@@ -37,10 +37,11 @@ html {
   display: flex; /*contenedor flexible para modificar contenido*/
   width: 100%; /*Ocupa el ancho de la página*/
   justify-content: space-between; /*Reparte el contenido espaciado*/
-  padding: 1.5rem; /*espacio entre el borde y el contenido*/ 
+  padding: 3.5rem; /*espacio entre el borde y el contenido*/ 
   z-index: 9999; /*se superpone por encima de todo*/ 
   height: auto; /*se mueve libremente*/
   background-color: var(--color-secondary);/*color establecido para el fondo del header*/
+  top: 0;
 }
 
 .logo {
@@ -81,6 +82,7 @@ html {
   align-items: center;
   justify-content: center;
   margin-block: 6.3rem;
+  margin-top: 15rem;
 }
 
 .hero-container-title {

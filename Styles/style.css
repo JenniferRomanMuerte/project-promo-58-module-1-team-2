@@ -33,10 +33,14 @@ html {
 /*******HEADER********/
 /* Susana */
 .header {
+  position: fixed; /*header fijado*/
   display: flex; /*contenedor flexible para modificar contenido*/
   width: 100%; /*Ocupa el ancho de la página*/
   justify-content: space-between; /*Reparte el contenido espaciado*/
-  padding: 3rem; /*espacio entre el borde y el contenido del header*/
+  padding: 1.5rem; /*espacio entre el borde y el contenido*/ 
+  z-index: 9999; /*se superpone por encima de todo*/ 
+  height: auto; /*se mueve libremente*/
+  background-color: var(--color-secondary);/*color establecido para el fondo del header*/
 }
 
 .logo {
@@ -49,9 +53,10 @@ html {
   display: flex; /*contenedor flexible para modificar el elemento*/
   flex-direction: column; /*ordena los span en columna*/
   justify-content: space-between; /*deja un espacio entre los span verticalmente*/
-  width: 3em; /*ancho*/
+  width: 3em;  /*ancho*/
   height: 2.4em; /*alto*/
   cursor: pointer; /*sombreado al pulsar*/
+  margin: 1rem; /*margen*/
 }
 
 .menu-icon span {
@@ -390,6 +395,13 @@ html {
 @media (width >768px) {
   /* Susana */
   /*HEADER*/
+   .header {
+  position: sticky; /*se queda el header estático*/
+  top: 0; /*se queda visible arriba de la página*/
+  background-color: var(--color-secondary);/*color establecido para el fondo del header*/
+  padding: 15px; /*espacio entre el borde y el contenido*/
+  z-index: 9999; /*se superpone por encima de todo*/
+  }
   .menu-icon {
     display: none; /*oculto el desplegable que contiene los enlaces*/
   }

@@ -20,6 +20,7 @@
   --color-tertiary: #000;
   --color-tertiary-variant: #0f0f0f;
   --color-text: #3f3f3f;
+  --color-fourth: #bdb0ec;
   /* Font weight*/
   --montserrat-medium: 500;
   --montserrat-semibold: 600;
@@ -37,10 +38,12 @@ html {
   display: flex; /*contenedor flexible para modificar contenido*/
   width: 100%; /*Ocupa el ancho de la página*/
   justify-content: space-between; /*Reparte el contenido espaciado*/
-  padding: 3.5rem; /*espacio entre el borde y el contenido*/ 
-  z-index: 9999; /*se superpone por encima de todo*/ 
+  padding: 3.5rem; /*espacio entre el borde y el contenido*/
+  z-index: 9999; /*se superpone por encima de todo*/
   height: auto; /*se mueve libremente*/
-  background-color: var(--color-secondary);/*color establecido para el fondo del header*/
+  background-color: var(
+    --color-secondary
+  ); /*color establecido para el fondo del header*/
   top: 0;
 }
 
@@ -54,7 +57,7 @@ html {
   display: flex; /*contenedor flexible para modificar el elemento*/
   flex-direction: column; /*ordena los span en columna*/
   justify-content: space-between; /*deja un espacio entre los span verticalmente*/
-  width: 3em;  /*ancho*/
+  width: 3em; /*ancho*/
   height: 2.4em; /*alto*/
   cursor: pointer; /*sombreado al pulsar*/
   margin: 1rem; /*margen*/
@@ -195,18 +198,18 @@ html {
   color: white;
   width: 100%;
   margin-top: 20;
-  margin-left: 30px;
-  margin-bottom: 15px;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .projects-title {
   background-color: #8447e9;
   color: white;
-  font-size: 12px;
+  font-size: 1.2rem;
   display: flex;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  margin-inline: 74px;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  margin-inline: 7.4rem;
   font-weight: var(--montserrat-medium);
 }
 
@@ -219,7 +222,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .projects-section {
@@ -233,10 +236,10 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 2rem 4rem;
 }
 .projects-images-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: var(--montserrat-medium);
 }
 
@@ -249,12 +252,12 @@ html {
   width: 100%;
 }
 .projects-images-text {
-  color: rgb(179, 176, 176); /* cambio este color?*/
+  color: var(--color-fourth);
 }
 .projects-button {
   display: flex;
   justify-content: center;
-  margin-block: 38px;
+  margin-block: 3.8rem;
 }
 .projects-text-button {
   background-color: var(--color-primary);
@@ -337,7 +340,12 @@ html {
   content: ""; /*aplica al contenido para el sombreado*/
   position: absolute; /*?*/
   inset: 0; /*ocupa todo el espacio del elemento*/
-  background-color: rgba(0,0,0,0.7); /*color de fondo para el sombreado de la imagen*/
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /*color de fondo para el sombreado de la imagen*/
   z-index: -1; /*?*/
 }
 
@@ -392,11 +400,13 @@ html {
 @media (width >768px) {
   /* Susana */
   /*HEADER*/
-   .header {
-  top: 0; /*se queda visible arriba de la página*/
-  background-color: var(--color-secondary);/*color establecido para el fondo del header*/
-  padding: 15px; /*espacio entre el borde y el contenido*/
-  z-index: 9999; /*se superpone por encima de todo*/
+  .header {
+    top: 0; /*se queda visible arriba de la página*/
+    background-color: var(
+      --color-secondary
+    ); /*color establecido para el fondo del header*/
+    padding: 15px; /*espacio entre el borde y el contenido*/
+    z-index: 9999; /*se superpone por encima de todo*/
   }
   .menu-icon {
     display: none; /*oculto el desplegable que contiene los enlaces*/
@@ -490,19 +500,26 @@ html {
 
   /* Mechi */
   /* Section project*/
+  .projects-title {
+    padding-inline: 0.4rem;
+  }
   .projects-parrafo {
     font-size: 2.5rem;
-    font-family: var(--montserrat-medium);
     color: var(--color-secondary-variant);
     display: inline-block;
-    padding-inline: 88px;
+    padding-inline: 7rem;
   }
+  .projects-wavy {
+    text-decoration: underline wavy var(--color-fourth);
+    text-underline-offset: 1rem;
+  }
+
   .projects-images {
     flex-direction: row;
     flex-wrap: wrap;
   }
   .projects-section {
-    width: 38%;
+    width: 43%;
   }
   .projects-button {
     display: block;
@@ -551,7 +568,9 @@ html {
     display: inline-block;
     color: var(--color-secondary-variant);
     font-size: 2rem;
-    background-color: var(--color-primary); /* Usamos las variables del root para los colores*/
+    background-color: var(
+      --color-primary
+    ); /* Usamos las variables del root para los colores*/
     text-decoration: none;
     margin-top: 5.8rem;
     margin-inline: auto; /* Margen lateral auto, de esta manera le da el mismo espacio a los dos lados*/

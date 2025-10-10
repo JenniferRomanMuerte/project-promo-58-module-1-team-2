@@ -398,7 +398,6 @@ html {
   /* Susana */
   /*HEADER*/
    .header {
-  position: sticky; /*se queda el header estático*/
   top: 0; /*se queda visible arriba de la página*/
   background-color: var(--color-secondary);/*color establecido para el fondo del header*/
   padding: 15px; /*espacio entre el borde y el contenido*/

@@ -39,32 +39,30 @@ html {
   width: 100%; /*Ocupa el ancho de la página*/
   justify-content: space-between; /*Reparte el contenido espaciado*/
   padding: 3.5rem; /*espacio entre el borde y el contenido*/
-  z-index: 9999; /*se superpone por encima de todo*/
+  z-index: 2; /*se superpone por encima de todo*/
   height: auto; /*se mueve libremente*/
-  background-color: var(
-    --color-secondary
-  ); /*color establecido para el fondo del header*/
-  top: 0;
+  background-color: var(--color-secondary); /*color establecido para el fondo del header*/
+  top: 0; /*el header queda fijado arriba de la página, aún haciendo scroll*/
 }
 
 .logo {
   color: var(--color-primary); /*color establecido al logo*/
   font-size: 3rem; /*tamaño fuente del logo*/
-  font-weight: 600; /*negrita*/
+  font-weight: var(--montserrat-semibold);
 }
 
 .menu-icon {
   display: flex; /*contenedor flexible para modificar el elemento*/
   flex-direction: column; /*ordena los span en columna*/
   justify-content: space-between; /*deja un espacio entre los span verticalmente*/
-  width: 3em; /*ancho*/
-  height: 2.4em; /*alto*/
+  width: 3rem; /*ancho*/
+  height: 1.8rem; /*alto*/
   cursor: pointer; /*sombreado al pulsar*/
   margin: 1rem; /*margen*/
 }
 
 .menu-icon span {
-  height: 3px; /*alto del color del span*/
+  height: 0.3rem; /*alto del color del span*/
   width: 100%; /*ancho del color del span*/
   background-color: var(--color-primary); /*color del span*/
 }
@@ -187,24 +185,24 @@ html {
 /*******PROJECT********/
 /* Mechi */
 .projects {
-  background-color: #8447e9;
+  background-color:var(--color-primary);
   background-attachment: fixed; /* esto esta bien?*/
   overflow: hidden; /* esto es para evitar scroll?*/
   width: 100%;
 }
 
 .projects-container {
-  background-color: #8447e9;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   width: 100%;
-  margin-top: 20;
+  margin-top: 2rem;
   margin-left: 3rem;
   margin-bottom: 1.5rem;
 }
 
 .projects-title {
-  background-color: #8447e9;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 1.2rem;
   display: flex;
   margin-top: 7rem;
@@ -232,7 +230,7 @@ html {
 }
 
 .projects-text-line {
-  color: white;
+  color: var(--color-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,7 +261,7 @@ html {
   background-color: var(--color-primary);
   color: var(--color-secondary-variant);
   padding: 2rem;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-secondary);
   font-weight: var(--montserrat-medium);
 }
 
@@ -303,7 +301,7 @@ html {
   align-items: center;
 }
 .news-button {
-  background-color: #fff;
+  background-color: var(--color-secondary);
   color: var(--color-primary);
   border: 0.1rem var(--color-primary) solid;
   display: inline-block;
@@ -320,7 +318,7 @@ html {
 /*******LIST********/
 /* Susana */
 .list {
-  position: relative; /*?*/
+  position: relative; /*el contenedor list queda en el sitio estipulado sin moverse*/
   background-image: url("/img/list-background.jpg"); /*imagen de fondo de la sección*/
   background-size: cover; /*la imagen rellena el fondo*/
   background-position: center; /*la imagen se centra*/
@@ -340,12 +338,7 @@ html {
   content: ""; /*aplica al contenido para el sombreado*/
   position: absolute; /*?*/
   inset: 0; /*ocupa todo el espacio del elemento*/
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /*color de fondo para el sombreado de la imagen*/
+  background-color: rgba(0,0,0,0.7); /*color de fondo para el sombreado de la imagen*/
   z-index: -1; /*?*/
 }
 
@@ -397,16 +390,13 @@ html {
 }
 
 /*********MEDIA-QUERIES********/
+
 @media (width >768px) {
+
   /* Susana */
   /*HEADER*/
   .header {
-    top: 0; /*se queda visible arriba de la página*/
-    background-color: var(
-      --color-secondary
-    ); /*color establecido para el fondo del header*/
-    padding: 15px; /*espacio entre el borde y el contenido*/
-    z-index: 9999; /*se superpone por encima de todo*/
+    padding: 1.5rem; /*espacio entre el borde y el contenido*/
   }
   .menu-icon {
     display: none; /*oculto el desplegable que contiene los enlaces*/
@@ -427,7 +417,7 @@ html {
 
   .links a {
     color: var(--color-tertiary-variant); /*color de los enlaces*/
-    font-weight: 500; /*negrita*/
+    font-weight: var(--montserrat-medium);
     cursor: pointer; /*cambia el cursor por una mano*/
   }
 
@@ -436,9 +426,7 @@ html {
   }
 
   .links ul a:hover {
-    color: var(
-      --color-primary
-    ); /*color establecido para que cambie al pasar el cursor por los enlaces*/
+    color: var(--color-primary); /*color establecido para que cambie al pasar el cursor por los enlaces*/
   }
 
   .contact-link {
@@ -448,7 +436,7 @@ html {
     color: var(--color-secondary); /*color establecido para el texto*/
     padding: 1.2rem 2.4rem; /*espacio entre el borde y el contenido*/
     font-size: 1.6rem; /*tamaño fuente del texto*/
-    font-weight: 500; /*negrita*/
+    font-weight: var(--montserrat-medium);
     cursor: pointer; /*cambia el cursor por una mano*/
     text-decoration: none; /*quita una linea blanca debajo del texto*/
   }
@@ -533,24 +521,6 @@ html {
 
   .list {
     position: absolute; /* Para poder posicionarla con referencia al footer*/
-    width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
-    bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
-  }
-
-  .span-list {
-    font-size: 6.2vw; /*tamaño fuente del texto*/
-    padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
-    margin-left: 0.5rem; /*margen desde la izquierda*/
-    margin-right: 0.5rem; /*margen desde la derecha*/
-  }
-
-  /* Section footer*/
-  .footer {
-    position: relative; /* Para que muestre list y ésta se posicione con respecto a él*/
-  }
-
-  .list {
-    position: absolute; /* Para poder posicionarla con referencia al footer*/
     height: 40rem; /*altura*/
     width: 85%; /* Le damos menos ancho para que no ocupe toda la pantalla*/
     bottom: 40rem; /* Para empujarlo hacia arriba con respecto al final del footer */
@@ -568,9 +538,7 @@ html {
     display: inline-block;
     color: var(--color-secondary-variant);
     font-size: 2rem;
-    background-color: var(
-      --color-primary
-    ); /* Usamos las variables del root para los colores*/
+    background-color: var(--color-primary); /* Usamos las variables del root para los colores*/
     text-decoration: none;
     margin-top: 5.8rem;
     margin-inline: auto; /* Margen lateral auto, de esta manera le da el mismo espacio a los dos lados*/
@@ -603,9 +571,7 @@ html {
 
   .footer-links a {
     text-decoration: none; /* Le quitamos el subrayado*/
-    color: var(
-      --color-secondary-variant
-    ); /* Le asignamos el color de la variable*/
+    color: var(--color-secondary-variant); /* Le asignamos el color de la variable*/
   }
 
   /* Mari */

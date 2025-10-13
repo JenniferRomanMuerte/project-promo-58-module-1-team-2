@@ -21,6 +21,7 @@
   --color-tertiary-variant: #0f0f0f;
   --color-text: #3f3f3f;
   --color-fourth: #bdb0ec;
+  --color-background-image: rgba(0,0,0,0.7);
   /* Font weight*/
   --montserrat-medium: 500;
   --montserrat-semibold: 600;
@@ -340,12 +341,7 @@ html {
   content: ""; /*aplica al contenido para el sombreado*/
   position: absolute; /*?*/
   inset: 0; /*ocupa todo el espacio del elemento*/
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /*color de fondo para el sombreado de la imagen*/
+  background-color: var(--color-background-image); /*color de fondo para el sombreado de la imagen*/
   z-index: -1; /*?*/
 }
 

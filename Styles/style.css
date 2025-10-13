@@ -425,6 +425,7 @@ html {
     color: var(--color-tertiary-variant); /*color de los enlaces*/
     font-weight: var(--montserrat-medium);
     cursor: pointer; /*cambia el cursor por una mano*/
+    text-decoration:none;
   }
 
   .links .home-link {

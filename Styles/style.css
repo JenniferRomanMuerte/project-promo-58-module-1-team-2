@@ -44,7 +44,7 @@ html {
   background-color: var(
     --color-secondary
   ); /*color establecido para el fondo del header*/
-  top: 0;
+  top: 0; /*el header queda fijado arriba de la página, aún haciendo scroll*/
 }
 
 .logo {
@@ -187,7 +187,7 @@ html {
 /*******PROJECT********/
 /* Mechi */
 .projects {
-  background-color: #8447e9;
+  background-color: var(--color-primary);
   background-attachment: fixed; /* esto esta bien?*/
   overflow: hidden; /* esto es para evitar scroll?*/
   width: 100%;
@@ -387,7 +387,7 @@ html {
   font-family: "Roboto";
   font-weight: var(--roboto-bold);
   padding-top: 10rem;
-  padding-left: 10rem;
+  padding-left: 3rem;
   padding-bottom: 8rem;
 }
 
@@ -429,6 +429,7 @@ html {
     color: var(--color-tertiary-variant); /*color de los enlaces*/
     font-weight: 500; /*negrita*/
     cursor: pointer; /*cambia el cursor por una mano*/
+    text-decoration: none;
   }
 
   .links .home-link {
@@ -624,9 +625,6 @@ html {
   }
   .news-container {
     width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .news-paragraph {
     margin-bottom: 8.8rem;

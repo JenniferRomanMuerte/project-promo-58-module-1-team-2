@@ -505,6 +505,7 @@ html {
     color: var(--color-secondary-variant);
     display: inline-block;
     padding-inline: 7rem;
+    text-wrap: balance;
   }
   .projects-wavy {
     text-decoration: underline wavy var(--color-fourth);
@@ -518,6 +519,9 @@ html {
   .projects-section {
     width: 43%;
   }
+  /*.projects-text-line {
+    padding-inline: 1rem;
+  }*/
   .projects-button {
     display: block;
     padding-left: 14.1rem;

@@ -322,7 +322,7 @@ html {
 /* Susana */
 .list {
   position: relative; /*?*/
-  background-image: url("/img/list-background.jpg"); /*imagen de fondo de la sección*/
+  background-image: url("../img/list-background.jpg"); /*imagen de fondo de la sección*/
   background-size: cover; /*la imagen rellena el fondo*/
   background-position: center; /*la imagen se centra*/
   display: flex; /*contenedor flexible para modificar contenido*/

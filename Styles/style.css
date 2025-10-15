@@ -274,7 +274,7 @@ html {
   margin-top: 9.3rem;
   margin-left: 0.1rem;
   padding-inline: 3.8rem;
-  width: 100vw;
+  width: 100%;
 }
 .news-title {
   font-size: 4rem;
@@ -620,7 +620,7 @@ html {
   .news-3-noticias {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     gap: 2rem;
   }
   .news-container {

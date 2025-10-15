@@ -7,11 +7,6 @@
 
 /* VARIABLES*/
 :root {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 62.5%;
 
   /*Colors*/
   --color-primary: #8447e9;
@@ -28,8 +23,14 @@
   --roboto-bold: 700;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 62.5%;
 }
 
 /*******HEADER********/
@@ -354,7 +355,7 @@ html {
 }
 
 .span-list {
-  font-size: 7.2vw; /*tamaño fuente*/
+  font-size: 7.2rem; /*tamaño fuente*/
 }
 
 /* Botón ocultado en mobile*/
@@ -539,7 +540,7 @@ html {
   }
 
   .span-list {
-    font-size: 6.2vw; /*tamaño fuente del texto*/
+    font-size: 6.2rem; /*tamaño fuente del texto*/
     padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
     margin-left: 0.5rem; /*margen desde la izquierda*/
     margin-right: 0.5rem; /*margen desde la derecha*/
@@ -558,7 +559,7 @@ html {
   }
 
   .span-list {
-    font-size: 4.2vw; /*tamaño fuente del texto*/
+    font-size: 4.2rem; /*tamaño fuente del texto*/
     padding: 5rem, 0; /*espacio entre el borde del span y el contenido*/
     margin-left: 0.5rem; /*margen desde la izquierda*/
     margin-right: 0.5rem; /*margen desde la derecha*/
